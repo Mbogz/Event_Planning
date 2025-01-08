@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaLocationDot } from 'react-icons/fa6';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
@@ -49,7 +49,7 @@ const FeaturedEvents = () => {
                <h3 className="e-title font-sans mt-[0] text-lg font-bold uppercase text-black ml-[2px]">{event.title}</h3>
                <div className="venue1 flex items-center">
                  <p className="text-black text-md mr-[5px] mt-[5px]">
-                   <FaLocationDot className="location-icon1" />
+                   <FaMapMarkerAlt className="location-icon1" />
                  </p>
                  <p className="local1 text-sm mt-[5px]">{event.venue_name}, {event.event_location}</p>
                </div>

@@ -1,10 +1,10 @@
 import React from 'react'
 import logo from './../../images/logo.png';
-import {FaEnvelope} from "react-icons/fa6";
-import {FaLocationDot} from "react-icons/fa6";
-import {FaPhone} from "react-icons/fa6";
+import {FaEnvelope} from "react-icons/fa";
+import {FaMapMarkerAlt} from "react-icons/fa";
+import {FaPhone} from "react-icons/fa";
 import {BiLogoFacebook} from "react-icons/bi";
-import {FaXTwitter} from "react-icons/fa6";
+import {FaTwitter} from "react-icons/fa";
 import { BiLogoInstagram } from 'react-icons/bi';
 import { BiLogoTiktok } from 'react-icons/bi';
 
@@ -18,14 +18,14 @@ function Footer() {
                 <div>
                     <div className="logo-title">
                         <img src={logo} alt="TicketWiz logo" />
-                        <h2>TicketWiz</h2>
+                        <h2>EventsKE</h2>
                     </div>
                     <p>Connecting You to Exciting Events with Fast and Hassle-Free Ticketing, Making Every Experience Memorable, One Click at a Time.</p>
                 </div>
                 <div className="social">
                     <a href="#socials"><BiLogoFacebook/></a>
                     <a href="#socials"><BiLogoInstagram/></a>
-                    <a href="#socials"><FaXTwitter/></a>
+                    <a href="#socials"><FaTwitter/></a>
                     <a href="#socials"><BiLogoTiktok/></a>
                 </div>
             </div>
@@ -51,13 +51,13 @@ function Footer() {
             </div>
             <div className="contact-details">
                 <h3 className='pb-[10px]'>Get in Touch</h3>
-                <p><FaLocationDot className='contact-icon'/> 123 Mwia Lane, Nairobi</p>
-                <p><FaPhone className='contact-icon'/> +254 719642456 | +254 728510900</p>
-                <p><FaEnvelope className='contact-icon'/> abc.email.com</p>
+                <p><FaMapMarkerAlt className='contact-icon'/> 123 Mwia Lane, Nairobi</p>
+                <p><FaPhone className='contact-icon'/> +254 712345678 | +254 787654321</p>
+                <p><FaEnvelope className='contact-icon'/> eventske@gmail.com</p>
             </div>
         </div>
         <div className="copyright-notice">
-            <p>&copy; 2023 TicketWiz. All rights reserved.</p>
+            <p>&copy; 2024 EvetsKE. All rights reserved.</p>
         </div>
     </section>
   )

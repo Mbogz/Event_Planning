@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import logo from './../../images/logo.png';
 import { Link } from "react-scroll";
+// import { Link as NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("Home");
 
   const handleLinkClick = (label) => {
+    console.log(`Clicked: ${label}`);
     setActiveLink(label);
   };
 
@@ -15,7 +17,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="h-auto w-[120px] mr-2" />
           <span className="font-sans text-white font-semibold text-2xl mr-0">
-            TicketWiz
+            EventsKE
           </span>
         </div>
 

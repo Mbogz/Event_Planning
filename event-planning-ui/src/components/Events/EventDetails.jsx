@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react'
-import { FaLocationDot, FaRegClock } from 'react-icons/fa6';
+import { FaMapMarkerAlt, FaRegClock } from 'react-icons/fa';
 import './Events.css';
 import { useParams } from 'react-router-dom';
 import AddToCalendar from './AddToCalendar';
 import { Link } from 'react-scroll';
 import Payment from './Payment';
-import './Payment.css';
+// import './Payment.css';
 import {MdClose} from 'react-icons/md'
 
 function formatDate(dateString) {
@@ -69,7 +69,7 @@ function EventDetails() {
             <h2 className="e-title text-[35px] font-bold mb-3 uppercase">{event.title}</h2>
           </div>
           <div className="venue1 flex items-center mt-[30px] tracking-wider tracking-wider">
-            <p className="text-black text-md mr-[10px] mt-[5px]"><FaLocationDot className="location-icon1" /></p>
+            <p className="text-black text-md mr-[10px] mt-[5px]"><FaMapMarkerAlt className="location-icon1" /></p>
             <p className='local uppercase font-medium '>{event.venue_name}, {event.event_location}</p>
           </div>
           <div className="venue1 flex items-center mb-[30px] tracking-wider tracking-wider">
